@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 scp docker-compose.yml root@114.116.28.26:/root
 ssh root@114.116.28.26
