@@ -7,7 +7,6 @@ docker pull edxops/firefox:${OPENEDX_RELEASE:-latest}
 docker pull edxops/credentials:${OPENEDX_RELEASE:-latest}
 docker pull edxops/discovery:${OPENEDX_RELEASE:-latest}
 docker pull edxops/ecommerce:${OPENEDX_RELEASE:-latest}
-docker pull edxops/edxapp:${OPENEDX_RELEASE:-latest}
 docker pull edxops/notes:${OPENEDX_RELEASE:-latest}
 docker pull edxops/edxapp:${OPENEDX_RELEASE:-latest}
 docker pull edxops/forum:${OPENEDX_RELEASE:-latest}

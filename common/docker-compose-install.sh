@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum install docker
+yum  -y install docker
 
 cat <<EOF > /etc/docker/daemon.json
 {"registry-mirrors": ["http://9c7eafcc.m.daocloud.io","http://18817714.m.daocloud.io","https://registry.docker-cn.com"]}
