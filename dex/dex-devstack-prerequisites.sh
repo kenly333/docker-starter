@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # install python
-yum install python
+yum -y install python
 python --version
 
 # install python-pip
 yum -y install epel-release
-yum install python-pip
+yum -y install python-pip
 pip --version
 
 # install git and clone devstack repo

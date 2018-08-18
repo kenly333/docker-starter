@@ -2,6 +2,7 @@
 
 # install docker
 yum  -y install docker
+docker info | grep -i 'storage driver'
 
 # config docker mirrors
 cat <<EOF > /etc/docker/daemon.json
