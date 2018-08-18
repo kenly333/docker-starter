@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# install git and clone devstack repo
+yum install git
+git clone https://github.com/edx/devstack.git
+
+# overlay2 is tested and supported
+docker info | grep -i 'storage driver'
+
 # Install the requirements inside of a Python virtualenv.
 make requirements
 
