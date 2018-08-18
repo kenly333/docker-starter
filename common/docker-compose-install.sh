@@ -1,12 +1,17 @@
 #!/bin/bash
 
+# install docker
 yum  -y install docker
 
+# config docker mirrors
 cat <<EOF > /etc/docker/daemon.json
 {"registry-mirrors": ["http://9c7eafcc.m.daocloud.io","http://18817714.m.daocloud.io","https://registry.docker-cn.com"]}
 EOF
 
 cat /etc/docker/daemon.json
+
+systemctl start docker
+systemctl enable docker
 
 # v1.19.0
 # sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
