@@ -1,5 +1,8 @@
 #!/bin/bash
 
+hostnamectl --static set-hostname  docker-host
+cat /etc/hostname
+
 # install docker
 yum  -y install docker
 docker info | grep -i 'storage driver'
