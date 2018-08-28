@@ -1,0 +1,27 @@
+
+1 Usernames and Passwords
+The provisioning script creates a Django superuser for every service.
+Email: edx@example.com
+Username: edx
+Password: edx
+
+The LMS also includes demo accounts. The passwords for each of these accounts is edx.
+Username	Email
+audit	    audit@example.com
+honor	    honor@example.com
+staff	    staff@example.com
+verified	verified@example.com
+
+-------------------------------------------------------------
+
+2 Service URLs
+Each service is accessible at localhost on a specific port. The table below provides links to the homepage of each service. Since some services are not meant to be user-facing, the "homepage" may be the API root.
+
+Service	              URL
+LMS	                  http://localhost:18000/
+Studio/CMS	          http://localhost:18010/
+E-Commerce/Otto	      http://localhost:18130/dashboard/
+
+Credentials	          http://localhost:18150/api/v2/
+Catalog/Discovery	    http://localhost:18381/api-docs/
+Notes/edx-notes-api	  http://localhost:18120/api/v1/

@@ -1,0 +1,15 @@
+version: '2'
+services:
+  gitbook:
+    image: fellah/gitbook:3.2.0
+    depends_on:
+      - db
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - srv-gitbook:/srv/gitbook
+      - srv-html:/srv/html
+volumes:
+  srv-gitbook: /root/srv/gitbook
+  srv-html: /root/srv/html
