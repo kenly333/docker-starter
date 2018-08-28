@@ -8,9 +8,3 @@ services:
     volumes:
       - /Volumes/data/gitbook/gitbook:/srv/gitbook
       - /Volumes/data/gitbook/html:/srv/html
-  nginx:
-    image: nginx:1.15.2
-    ports:
-      - "80:80"
-    volumes:
-      - /Volumes/data/gitbook/html:/usr/share/nginx/html    
